@@ -1,0 +1,9 @@
+dependencies:
+  pre:
+    - gem install bundler --pre
+
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: training-ci
