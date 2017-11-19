@@ -8,5 +8,7 @@ dependencies:
 deployment:
   production:
     branch: master
+    commands:
+      - heroku run rake db:migrate
     heroku:
       appname: training-ci
