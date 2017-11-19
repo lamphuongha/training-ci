@@ -1,3 +1,6 @@
+machine:
+  ruby:
+    version: 2.3.4
 dependencies:
   pre:
     - gem install bundler --pre
@@ -7,6 +10,3 @@ deployment:
     branch: master
     heroku:
       appname: training-ci
-    commands:
-      - git push git@heroku.com:training-ci.git $CIRCLE_SHA1:master
-      - heroku run rake db:migrate --app training-ci
