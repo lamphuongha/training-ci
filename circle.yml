@@ -4,11 +4,10 @@ machine:
 dependencies:
   pre:
     - gem install bundler --pre
+    - heroku run rake db:migrate --app training-ci
 
 deployment:
   production:
     branch: master
-    commands:
-      - heroku run rake db:migrate
     heroku:
       appname: training-ci
