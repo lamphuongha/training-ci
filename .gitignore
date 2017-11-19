@@ -21,3 +21,10 @@
 /yarn-error.log
 
 .byebug_history
+.DS_Store
+app/.DS_Store
+app/assets/.DS_Store
+app/views/.DS_Store
+app/views/layouts/.DS_Store
+config/.DS_Store
+db/.DS_Store
